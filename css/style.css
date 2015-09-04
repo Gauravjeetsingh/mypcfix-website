@@ -5,7 +5,57 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  font-family:'Lato', sans-serif;
 }
+
+a:focus{
+	background-color:#a52016 !IMPORTANT;
+}
+
+
+a:hover{
+	background-color:#a52016 !IMPORTANT;
+}
+
+.navbar-nav a{
+	color:#fff !IMPORTANT;
+	font-size:18px;
+}
+
+.top-bar{
+	background-color:#da291c;
+}
+
+.search-box{
+	border:none;
+	border-radius:0%;
+	border-bottom:1px solid #fafafa;
+	width:100%;
+	background-color:#da291c;
+	color:#fff;
+}
+
+.input-group-addon{
+	color:#fff;
+	background-color:#da291c;
+	border:none;
+	border-radius:0;
+}
+
+.input-group-addon:hover{
+	color:#f3f3f3;
+}
+
+.input-group{
+	margin-top:8px;
+}
+
+.dropdown-menu{
+	background-color:#d4291c;
+	color:#fff;
+}
+
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -17,12 +67,13 @@ body {
    width:140px;
 }
 
-.nav-container{
-	background:#fff;
-}
-
 .navbar-nav >li > a:focus{
 outline:none;
+}
+
+.nav > li > a:hover, .nav > li > a:focus{
+background-color:#da291c !IMPORTANT;
+color:#fff584 !IMPORTANT;
 }
 
 .navbar-nav a{
@@ -32,7 +83,13 @@ outline:none;
 input[type=text]:focus{
 	box-shadow:none;
 	border-color:#e3e3e3;
+	background-color:#a52016;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
 
 #basic-addon1{
 	top:0;
@@ -47,6 +104,15 @@ input[type=text]:focus{
 	padding:30px;
 }
 
+.form-control{
+	box-shadow:none;
+	font-size:16px;
+}
+
+.glyphicon{
+	color:#fff;
+}
+
 .circle{
 	width:200px;
 	height:200px;
@@ -57,4 +123,21 @@ input[type=text]:focus{
 
 .caption{
 	text-align:center;
+}
+
+
+::-webkit-input-placeholder {
+   color: #fafafa;  
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fafafa;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fafafa !IMPORTANT; 
+}
+
+:-ms-input-placeholder {  
+   color: #fafafa; 
 }

@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
    
-    <title>Computer Services</title>
+	<title>Computer Services</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 	<link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+</head>
+<body>
 
-  </head>
-  <body>
-
-<div class="row" style="border-bottom:1px solid #DA291C;">  
-	<div class="container nav-container">
+<div class="row top-bar">  
+	<div class="container">
 		<div class="navbar-header">
-			<img src="images/pcfix_logo.png" class="logo">
-		        <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-align-justify" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<img src="images/logo2.png" class="logo">
+		        <button type="button" 
+			class="navbar-toggle collapsed glyphicon glyphicon-align-justify" 
+			data-toggle="collapse" data-target="#navbar" aria-expanded="false" 
+			aria-controls="navbar">
 		        </button>
 		</div><!--end navbar-header-->
         	<div style="height: 1px;" aria-expanded="false" id="navbar" class="navbar-collapse collapse navbar-right">
+			<div class="input-group">
+				<input type="text" class="form-control search-box" 
+				placeholder="Search" aria-describedby="basic-addon1" >
+				<span class="btn input-group-addon glyphicon glyphicon-search" 
+				id="basic-addon1"></span>
+			</div>
+			
         		<ul class="nav navbar-nav">
 		            <li><a href="#">Home</a></li>
 		            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
@@ -41,56 +43,24 @@
 			    </li>
 		            <li><a href="#">Contact us</a></li>
 			    <li><a href="#">Pay Now</a></li>
+			    <li><a href="#">Sign in</a></li>
 		
 			    <li>
-				<form class="navbar-form " role="search">
-					<div class="input-group">
-				   	       <input type="text" class="form-control search-input" placeholder="Search" aria-describedby="basic-addon1" >
-					       <span class="btn input-group-addon glyphicon glyphicon-search " id="basic-addon1"></span>
-				        </div>
-				</form>
 			    </li>
 			</ul>
 		</div><!--end #navbar-->
 	</div><!--end container-->
  </div>	<!--end row-->
 
-<div class="container">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="images/ad.jpg" alt="...">
-      <div class="caption">
-        <h3>Post/View Ad Free</h3>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="..." alt="...">
-      <div class="caption">
-        <h3>Get your coupons</h3>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="..." alt="...">
-      <div class="caption">
-        <h3>Get our members</h3>
-      </div>
-    </div>
-  </div>
-</div>
-
 <footer class="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
 				<form>
-					<div class="input-group track-form">
+				<!--	<div class="input-group track-form">
 						<input type="text" class="form-control" placeholder="Track your computer" aria-describedby="basic-addon2">
 						<span class="btn input-group-addon btn-default" id="basic-addon2">Go</span>
-					</div>
+					</div>-->
 				</form>
 			</div>
 		</div>
