@@ -13,26 +13,17 @@ a:focus{
 }
 
 
-a:hover{
-	background-color:#a52016 !IMPORTANT;
-}
 
 .navbar-nav a{
-	color:#fff !IMPORTANT;
 	font-size:18px;
 }
 
-.top-bar{
-	background-color:#da291c;
-}
 
 .search-box{
 	border:none;
 	border-radius:0%;
-	border-bottom:1px solid #fafafa;
-	width:100%;
-	background-color:#da291c;
-	color:#fff;
+	border-bottom:1px solid #acacac;
+	width:50%;
 }
 
 .input-group-addon{
@@ -48,11 +39,12 @@ a:hover{
 
 .input-group{
 	margin-top:8px;
+	max-width:250px;
+	margin-left:220px;
 }
 
 .dropdown-menu{
 	background-color:#d4291c;
-	color:#fff;
 }
 
 
@@ -64,7 +56,7 @@ a:hover{
 }
 
 .logo{
-   width:140px;
+   width:180px;
 }
 
 .navbar-nav >li > a:focus{
@@ -72,8 +64,8 @@ outline:none;
 }
 
 .nav > li > a:hover, .nav > li > a:focus{
-background-color:#da291c !IMPORTANT;
-color:#fff584 !IMPORTANT;
+background-color:#fff !IMPORTANT;
+color:#da291c;
 }
 
 .navbar-nav a{
@@ -83,13 +75,7 @@ color:#fff584 !IMPORTANT;
 input[type=text]:focus{
 	box-shadow:none;
 	border-color:#e3e3e3;
-	background-color:#a52016;
 }
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; 
- }
 
 #basic-addon1{
 	top:0;
@@ -109,9 +95,6 @@ input[type=text]:focus{
 	font-size:16px;
 }
 
-.glyphicon{
-	color:#fff;
-}
 
 .circle{
 	width:200px;
@@ -126,18 +109,23 @@ input[type=text]:focus{
 }
 
 
-::-webkit-input-placeholder {
-   color: #fafafa;  
+
+@media (min-width: 900px) {
+	.dropdown:hover .dropdown-menu {
+		display: block;
+		margin-top: 0; 
+	}
+.dropdown-menu > li > a, .dropdown-menu > li > a:hover{
+	color:#fff;
+}
+a:hover{
+	background-color:#a52016 !IMPORTANT;
+	color:#fff;
+}
 }
 
-:-moz-placeholder { /* Firefox 18- */
-   color: #fafafa;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #fafafa !IMPORTANT; 
-}
-
-:-ms-input-placeholder {  
-   color: #fafafa; 
+@media (max-width: 500px){
+	.input-group{
+		margin-left:0px;
+	}
 }
