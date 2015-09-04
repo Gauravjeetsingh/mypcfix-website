@@ -12,13 +12,26 @@ a:focus{
 	background-color:#a52016 !IMPORTANT;
 }
 
-
+.slideshow{
+    height: 500px;
+    background: url('../images/tech1.jpg') no-repeat;
+    background-size: cover;
+}
 
 .navbar-nav a{
 	font-size:18px;
 }
 
+.welcome-message{
+	margin-top:20px;
+}
 
+.welcome-image{
+	height:250px;
+	background:url('../images/members.jpg') no-repeat;
+	background-size:cover;
+}
+	
 .search-box{
 	border:none;
 	border-radius:0%;
