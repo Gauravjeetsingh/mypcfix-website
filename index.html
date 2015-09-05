@@ -9,11 +9,11 @@
 
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery.js"></script>
 	<link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
 </head>
 <body>
-
+<div class="page-wrap">
 <div class="row top-bar">  
 	<div class="container">
 		<div class="navbar-header">
@@ -50,7 +50,27 @@
  </div>	<!--end row-->
 
 
-<div class="row slideshow">
+<div class="container slideshow">
+	<div class="contentContainer">
+	<div id="wrapper">
+		<div id="item1" class="content">
+
+		</div>
+		<div id="item2" class="content">
+
+		</div>
+		<div id="item3" class="content">
+
+		</div>
+	</div>
+	</div>
+<div id="navLinks">
+    <ul>
+        <li class="itemLinks" data-pos="0%"></li>
+        <li class="itemLinks" data-pos="-98%"></li>
+        <li class="itemLinks" data-pos="-196%"></li>
+    </ul>
+</div>
 </div>
 
 <div class="row welcome-message">
@@ -65,21 +85,49 @@
 	</div>
 </div>
 
-<footer class="footer">
+
+<div class="row">
 	<div class="container">
-		<div class="row">
+		<div class="breadcrumbs">
+		<div class="col-md-4 bc1">
+		</div>
+		<div class="col-md-4 bc2">
+
+		</div>
+		<div class="col-md-4 bc3">
+		</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<footer class="footer">
+<div class="row">
+	<div class="container">
 			<div class="col-md-4">
 				<form>
-				<!--	<div class="input-group track-form">
+					<div class="input-group track-form">
 						<input type="text" class="form-control" placeholder="Track your computer" aria-describedby="basic-addon2">
 						<span class="btn input-group-addon btn-default" id="basic-addon2">Go</span>
-					</div>-->
+					</div>
 				</form>
 			</div>
+			<div class="col-md-4 social-icons">
+				<a href="#"><img src="images/fb.png"></a>
+				<a href="#"><img src="images/twtr.png"></a>
+				<a href="#"><img src="images/yo.png"></a>
+				<a href="#"><img src="images/gplus.png"></a>
+			</div>
+	</div>
+</div>
+	<div class="row">
+		<div class="copyright">
+			<p>Copyright @ 2003-2013 All rights reserved MyPcfix Technologies</p>
 		</div>
 	</div>
 </footer>
-
+    <script src="js/slider.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
